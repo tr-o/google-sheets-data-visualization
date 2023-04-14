@@ -13,6 +13,19 @@ This code is designed to work with Google Sheets and the Google Apps Script plat
 
 To use this code, you'll need to create a Google Sheet with sheets named "Data", "DataForPlot", and "Dashboard", and then create charts in the "Dashboard" sheet that reference the data in the "DataForPlot" sheet. You can then run the `updateCharts()` function to update the data and charts according to the logic in the code.
 
+このコードは、GoogleシートとGoogle Apps Scriptプラットフォームで動作するように設計されています。Googleシート内でデータを操作・可視化するのに役立ついくつかの関数が含まれています。以下に、使用方法と機能の概要を説明します。
+
+1. **copyDataForPlot(inputInteger)**: この関数は、"Data"シートから"DataForPlot"シートに指定された行数のデータをコピーします。入力が指定されていない場合は、"Dashboard"シートのJ2セルの値を使用します。また、"DataForPlot"シートのA列の最初と最後の値を"Dashboard"シートのJ3セルとJ4セルに書き込みます。
+
+2. **updateAllGraphs()**: この関数は、"Dashboard"シート内のすべてのグラフを更新します。各グラフに対して`updateGraph`関数を呼び出すことでループ処理を行います。
+
+3. **updateGraph(sheet, graph, chart)**: この関数は、データ系列の範囲を再計算し、Y軸の範囲を20%のマージンを含めて調整することで、単一のグラフを更新します。また、X軸のタイトルを「Time」、Y軸のタイトルを「Data」と設定します。
+
+4. **updateCharts()**: この関数は、`copyDataForPlot()`と`updateAllGraphs()`を順番に呼び出すユーティリティ関数です。これにより、Googleシート内のデータとグラフを1つの関数呼び出しで更新できます。
+
+このコードを使用するには、"Data"、"DataForPlot"、"Dashboard"という名前のシートが含まれるGoogleシートを作成し、"Dashboard"シート内に"DataForPlot"シートを参照するグラフを作成します。その後、`updateCharts()`関数を実行して、コードのロジックに従ってデータとグラフを更新できます。
+
+
 ![image](https://user-images.githubusercontent.com/98264095/231945108-cb43d055-275e-427b-9a4f-e1c7a43940d6.png)
 
 
