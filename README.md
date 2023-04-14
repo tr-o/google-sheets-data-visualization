@@ -35,8 +35,7 @@ The primary goal of this project is to simplify the process of creating interact
 
 ## Dependencies
 
-This project relies on Google Apps Script, a scripting platform developed by Google for light-weight application development in the Google Workspace ecosystem.
-
+This project relies on Google Apps Script, a scripting platform developed by Google for light-weight application development in the Google Workspace ecosystem. Additionally, the project is supported by GPT-4, a powerful AI language model developed by OpenAI.
 
 
 
