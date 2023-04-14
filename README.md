@@ -1,7 +1,6 @@
 # google-sheets-data-visualization
-The code enables data visualization in a Google Sheets spreadsheet by copying a specified number of rows from a data sheet to a plot sheet and updating all the associated graphs in a dashboard sheet. This process ensures that the graphs display the latest data while allowing for customization of data ranges and chart configurations.
-
 This code is designed to work with Google Sheets and the Google Apps Script platform. It includes several functions that help you manipulate and visualize data in a Google Sheet. Here's a summary of how to use it and what it does:
+![image](https://user-images.githubusercontent.com/98264095/231945108-cb43d055-275e-427b-9a4f-e1c7a43940d6.png)
 
 1. **copyDataForPlot(inputInteger)**: This function copies a specified number of rows of data from the "Data" sheet to the "DataForPlot" sheet. If no input is provided, it will use the value from cell J2 in the "Dashboard" sheet. It also writes the first and last values of the A-column from the "DataForPlot" sheet to cells J3 and J4 in the "Dashboard" sheet.
 
@@ -26,7 +25,7 @@ To use this code, you'll need to create a Google Sheet with sheets named "Data",
 このコードを使用するには、"Data"、"DataForPlot"、"Dashboard"という名前のシートが含まれるGoogleシートを作成し、"Dashboard"シート内に"DataForPlot"シートを参照するグラフを作成します。その後、`updateCharts()`関数を実行して、コードのロジックに従ってデータとグラフを更新できます。
 
 
-![image](https://user-images.githubusercontent.com/98264095/231945108-cb43d055-275e-427b-9a4f-e1c7a43940d6.png)
+
 
 
 
