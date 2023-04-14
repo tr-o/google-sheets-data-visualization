@@ -81,4 +81,8 @@ function updateGraph(sheet, graph, chart) {
   graph.updateChart(newChart);
 }
 
+function updateCharts(){
+  copyDataForPlot();
+  updateAllGraphs();
+}
 
