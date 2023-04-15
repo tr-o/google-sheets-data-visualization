@@ -4,7 +4,7 @@ This project offers a Google Sheets data visualization solution using Google App
 ![image](https://user-images.githubusercontent.com/98264095/231945108-cb43d055-275e-427b-9a4f-e1c7a43940d6.png)
 *Sample data visualization created using the provided Google Apps Script functions.*
 
-The repository contains two script files, `updateCharts.gs` and `updateTable.gs`, both of which work together to update charts and tables in the Google Sheets Dashboard. Additionally, a sample spreadsheet file, `sample_spreadsheet.xlsx`, is provided to demonstrate the implementation and usage of the scripts. This sample file contains example data and code, making it easier for you to test the project quickly.
+The repository contains two script files, `updateCharts.gs` and `updateTable.gs`, both of which work together to update charts and tables in the Google Sheets Dashboard. Additionally, a sample spreadsheet file, `sample_spreadsheet.xlsx`, is provided to demonstrate the implementation and usage of the scripts. This sample file contains example data and charts.
 
 ## Project Purpose
 
